@@ -1,0 +1,48 @@
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div style="border: solid black 1px;">
+        <h1 style="text-align: center;">Survey Form</h1>
+        <table>
+            <form action="/process" method="POST">
+                <tr>
+                    <td>Your Name: </td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Dojo Location</td>
+                    <td>
+                        <select name="location" id="location" style="width: 100%;">
+                        <option value="Washington DC">Washington DC</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Dallas">Dallas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite Language</td>
+                    <td>
+                        <select name="favorite_language" id="favorite_language" style="width: 100%;">
+                            <option value="Javascript">Javascript</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="FORTH">FORTH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Comment (optional):</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="comment" id="comment" style="width: 100%;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit" style="float: right;">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
